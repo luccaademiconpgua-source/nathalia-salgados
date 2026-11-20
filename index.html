@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nathália Salgados | Doces e salgados artesanais em Paranaguá</title>
+<meta name="description" content="Doces e salgados artesanais, café e sucos no Centro Histórico de Paranaguá. Coma no salão, peça a entrega ou encomende kits para festas. Rua Marechal Alberto de Abreu, 137.">
+<meta name="theme-color" content="#C3E09D">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Nathália Salgados | Paranaguá">
+<meta property="og:description" content="Sabor de família em cada pedacinho. Doces e salgados artesanais no Centro Histórico de Paranaguá. Nota 4,8 no Google.">
+<link rel="icon" type="image/webp" href="img/fav.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Nathália Salgados",
+  "description": "Ateliê de doces e salgados artesanais",
+  "servesCuisine": ["Salgados", "Doces", "Café", "Sucos"],
+  "priceRange": "R$ 20 - R$ 40",
+  "telephone": "+55 41 98404-7595",
+  "sameAs": ["https://www.instagram.com/nathaliasalgados_/"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Marechal Alberto de Abreu, 137",
+    "addressLocality": "Paranaguá",
+    "addressRegion": "PR",
+    "postalCode": "83203-240",
+    "addressCountry": "BR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -25.5191078, "longitude": -48.5059186 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:30", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:30", "closes": "15:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "40" },
+  "hasMap": "https://www.google.com/maps/place/Nath%C3%A1lia+Salgados/@-25.5191078,-48.5059186,17z/data=!3m1!4b1!4m6!3m5!1s0x94db9bafb7790091:0xb802eb035a132344!8m2!3d-25.5191078!4d-48.5059186!16s%2Fg%2F11mqx07w_8"
+}
+</script>
+<style>
+/* Paleta tirada das artes da marca (Canva e Instagram) */
+:root{
+  --folha:#404B23;     /* verde oliva escuro das artes do Instagram */
+  --maca:#C3E09D;      /* verde claro dos slides do cardápio */
+  --salvia:#769F76;    /* verde sálvia dos botões do cardápio */
+  --ouro:#D9B45A;      /* dourado das molduras e detalhes */
+  --marrom:#533012;    /* marrom do nome "Nathália" nas artes */
+  --teal:#1E554F;      /* verde-azulado do logo */
+  --fundo:#F6FAEF;
+  --texto:#2B3320;
+  --wa:#1B9E52;
+  --display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--body);font-size:1.0625rem;line-height:1.6;color:var(--texto);background:var(--fundo);-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--marrom);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1;letter-spacing:-.01em;font-weight:700;color:var(--folha)}
+h2{font-size:clamp(2.3rem,6vw,3.8rem)}
+p{max-width:62ch}
+/* botões */
+.btn{display:inline-flex;align-items:center;gap:.6rem;min-height:52px;padding:.8rem 1.6rem;border-radius:999px;border:2px solid var(--folha);font:700 1rem/1.1 var(--body);text-decoration:none;cursor:pointer;transition:transform .15s ease,background .15s ease,color .15s ease}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-solid{background:var(--folha);color:#fff}
+.btn-solid:hover{background:#2f3919;transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--folha)}
+.btn-line:hover{background:var(--folha);color:#fff}
+.btn-gold{background:var(--ouro);color:var(--folha);border-color:var(--ouro)}
+.btn-gold:hover{background:#fff;border-color:#fff;transform:translateY(-2px)}
+/* topo */
+header.top{position:sticky;top:0;z-index:20;background:rgba(246,250,239,.93);backdrop-filter:blur(8px);border-bottom:1px solid rgba(64,75,35,.15)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:70px}
+.brand{text-decoration:none;display:flex;align-items:center;gap:.7rem;line-height:1;white-space:nowrap}
+.brand img{width:56px;height:56px;border-radius:50%}
+.brand .nome{display:flex;flex-direction:column}
+.brand b{font:italic 700 1.9rem/1 var(--display);color:var(--teal)}
+.brand small{font:600 .78rem/1.3 var(--body);color:var(--marrom);letter-spacing:.02em}
+.top nav{display:none;gap:1.6rem}
+.top nav a{text-decoration:none;font-weight:600;font-size:.98rem}
+.top nav a:hover{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:2px}
+.top .btn{min-height:44px;padding:.5rem 1.1rem;font-size:.95rem;white-space:nowrap}
+@media(max-width:480px){.top .btn{padding:.5rem .9rem;font-size:.88rem}.top .btn svg{display:none}.brand img{width:44px;height:44px}.brand b{font-size:1.5rem}.brand small{font-size:.7rem}}
+@media(min-width:860px){.top nav{display:flex}}
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--maca);padding:clamp(48px,8vw,104px) 0 clamp(56px,8vw,112px)}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:2.4rem}
+.hero h1{font-size:clamp(3.2rem,10.5vw,7rem);max-width:10.5em;line-height:.92;letter-spacing:-.02em}
+.hero p.lead{margin-top:1.5rem;font-size:clamp(1.15rem,2.4vw,1.4rem);line-height:1.5;font-weight:500;max-width:32em;color:var(--folha)}
+.hero .actions{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.8rem}
+.seal{width:168px;aspect-ratio:1;border-radius:50%;background:var(--teal);color:var(--ouro);display:grid;place-content:center;text-align:center;transform:rotate(-8deg);box-shadow:0 0 0 6px var(--maca),0 0 0 8px var(--teal)}
+.seal b{font:700 3.8rem/1 var(--display)}
+.seal span{font-size:.92rem;font-weight:600;line-height:1.25;color:#fff;margin-top:.2rem}
+@media(min-width:860px){
+  .hero .wrap{grid-template-columns:1fr auto;align-items:center;gap:3rem}
+  .seal{width:220px;margin-right:4%}
+  .seal b{font-size:5rem}
+  .seal span{font-size:1rem}
+}
+/* ramos de oliveira, a marca registrada das artes da Nathália */
+.ramo{position:absolute;z-index:0;width:min(34vw,300px);height:auto;pointer-events:none}
+.ramo.a{top:-30px;right:-20px;transform:rotate(18deg)}
+@media(max-width:859px){.ramo.a{opacity:.55}}
+/* única animação de entrada da página */
+.hero .wrap > *{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.hero .wrap > div{animation-delay:.1s}
+.hero .seal{animation:stamp .7s .55s cubic-bezier(.3,1.4,.5,1) both}
+.ramo.a{animation:sway 1.4s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes stamp{from{opacity:0;transform:rotate(-8deg) scale(1.5)}to{opacity:1;transform:rotate(-8deg) scale(1)}}
+@keyframes sway{from{opacity:0;transform:rotate(40deg) translateY(-20px)}to{transform:rotate(18deg)}}
+/* destaque */
+.feature{background:var(--folha);color:#fff;padding:clamp(48px,8vw,88px) 0}
+.feature .wrap{display:grid;gap:1.6rem;align-items:end}
+.feature h2{color:var(--ouro);font-size:clamp(2.6rem,7.5vw,5rem);max-width:12em;line-height:.95}
+.feature p{font-size:1.15rem;color:#E8EDDC;margin-top:1rem}
+@media(min-width:860px){.feature .wrap{grid-template-columns:1fr auto}}
+/* seções */
+section.block{padding:clamp(56px,9vw,104px) 0}
+.sec-head{display:grid;gap:1rem;margin-bottom:2.4rem}
+.sec-head p{font-size:1.1rem}
+/* cardápio */
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem 1.8rem;border-bottom:2px solid var(--folha);margin-bottom:1.8rem}
+.tab{appearance:none;background:none;border:0;border-bottom:5px solid transparent;margin-bottom:-2px;padding:.7rem 0 .5rem;font:700 1.6rem/1 var(--display);color:rgba(64,75,35,.6);cursor:pointer}
+.tab:hover{color:var(--folha)}
+.tab[aria-selected="true"]{color:var(--folha);border-bottom-color:var(--ouro)}
+.panel{min-height:240px}
+.panel p.note{font-size:1.1rem;margin-bottom:1.4rem}
+.groups{display:grid;gap:2rem 3rem}
+@media(min-width:760px){.groups{grid-template-columns:1fr 1fr}}
+.group{border:2px solid var(--ouro);border-radius:6px 26px 6px 26px;padding:1.4rem 1.5rem 1.2rem;background:#fff}
+.group h3{font-size:1.9rem;margin-bottom:.7rem;color:var(--teal)}
+.group ul{list-style:none;padding:0}
+.group li{padding:.42rem 0;border-bottom:1px dotted rgba(64,75,35,.35);font-weight:500}
+.group li:last-child{border-bottom:0}
+.menu-foot{margin-top:2rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+.menu-foot small{font-size:1rem;color:rgba(43,51,32,.82)}
+/* kits festa */
+.party{background:var(--ouro);padding:clamp(44px,7vw,80px) 0}
+.party .wrap{display:grid;gap:1.6rem;align-items:center}
+.party h2{font-size:clamp(2.4rem,6.5vw,4.4rem)}
+.party p{margin-top:1rem;font-size:1.2rem;color:var(--folha);font-weight:500}
+@media(min-width:860px){.party .wrap{grid-template-columns:1fr auto}}
+/* ambiente */
+.ambient{background:#E5EFD6}
+.ambient .sec-head{grid-template-columns:1fr}
+@media(min-width:860px){.ambient .sec-head{grid-template-columns:1fr 1fr;align-items:end;gap:3rem}}
+.gallery{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+.shot{position:relative;margin:0;min-height:200px;overflow:hidden;border-radius:6px 28px 6px 28px;background:var(--salvia)}
+.shot:nth-child(2n){border-radius:28px 6px 28px 6px}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot figcaption{position:absolute;left:12px;bottom:12px;background:var(--folha);color:#fff;font-size:.9rem;font-weight:600;padding:.3rem .8rem;border-radius:999px}
+.shot.tall{grid-row:span 2;min-height:420px}
+.shot.slogan{background:var(--folha);display:grid;place-content:center;padding:1.6rem;text-align:left}
+.shot.slogan p{font:italic 700 clamp(1.7rem,4vw,2.4rem)/1.05 var(--display);color:var(--ouro)}
+@media(min-width:860px){
+  .gallery{grid-template-columns:1fr 1.1fr 1fr;grid-auto-rows:220px}
+  .shot.tall{min-height:0}
+  .shot.wide{grid-column:span 2}
+  .shot.slogan.wide{grid-column:span 3}
+}
+/* avaliações */
+.reviews .wrap{display:grid;gap:3rem}
+.score{display:flex;flex-direction:column;gap:.7rem}
+.score h2{font-size:2rem}
+.score b{font:700 clamp(6rem,19vw,10rem)/.8 var(--display);color:var(--teal)}
+.stars{display:flex;gap:4px}
+.stars svg{width:26px;height:26px;fill:var(--ouro);stroke:var(--marrom);stroke-width:1.3}
+.score p{font-size:1.1rem}
+.quotes{display:grid}
+blockquote{padding:1.6rem 0;border-top:2px solid var(--ouro)}
+blockquote:last-child{border-bottom:2px solid var(--ouro)}
+blockquote p{font:600 clamp(1.5rem,3.4vw,2.1rem)/1.2 var(--display);color:var(--folha);max-width:28em}
+blockquote footer{margin-top:.8rem;font-weight:600;color:var(--marrom)}
+@media(min-width:900px){.reviews .wrap{grid-template-columns:.8fr 1.4fr;gap:5rem}}
+/* atendimento */
+.ways{display:grid;gap:18px}
+.way{padding:clamp(28px,5vw,48px);border-radius:8px 40px 8px 40px;display:flex;flex-direction:column;gap:1rem;align-items:flex-start}
+.way h3{font-size:clamp(2.2rem,4.5vw,3rem)}
+.way.salon{background:#fff;border:2px solid var(--ouro)}
+.way.delivery{background:var(--teal);color:#fff;border-radius:40px 8px 40px 8px}
+.way.delivery h3{color:var(--ouro)}
+.way .btn{margin-top:auto}
+@media(min-width:860px){.ways{grid-template-columns:1fr 1fr}}
+/* visite */
+.visit{background:var(--maca)}
+.visit .wrap{display:grid;gap:2.4rem}
+.visit address{font-style:normal;font-size:1.2rem;line-height:1.5;margin:1.2rem 0}
+.visit .row-btn{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.4rem}
+table.hours{border-collapse:collapse;width:100%;max-width:430px;margin-top:1.4rem;font-size:1.05rem}
+table.hours caption{text-align:left;font:700 1.9rem/1 var(--display);padding-bottom:.7rem;color:var(--folha)}
+table.hours th,table.hours td{text-align:left;padding:.55rem 0;border-top:1px solid rgba(64,75,35,.4);font-weight:500}
+table.hours td{text-align:right;font-weight:700}
+table.hours tr:last-child th,table.hours tr:last-child td{border-bottom:1px solid rgba(64,75,35,.4)}
+.tbd{font-weight:500;font-style:italic}
+.map{border:2px solid var(--folha);border-radius:8px 36px 8px 36px;overflow:hidden;min-height:340px;background:#fff}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+@media(min-width:900px){.visit .wrap{grid-template-columns:1fr 1.1fr;align-items:stretch;gap:4rem}.map{min-height:480px}}
+footer.site{background:var(--folha);color:#DDE5CC;padding:2.4rem 0 5.5rem;font-size:1rem}
+footer.site .wrap{display:grid;gap:1.2rem}
+footer.site .foot-brand img{width:112px;height:112px;border-radius:50%;margin-bottom:.8rem;background:#fff}
+footer.site strong{font:italic 700 2rem var(--display);color:var(--ouro)}
+footer.site a{color:#fff}
+@media(min-width:860px){footer.site{padding-bottom:2.4rem}footer.site .wrap{grid-template-columns:1fr auto;align-items:end}}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:flex;align-items:center;gap:.6rem;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;padding:.85rem 1.2rem;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.28)}
+.fab svg{width:24px;height:24px}
+@media(min-width:860px){.fab{display:none}}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200Zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200c0 1.300.9 2.600 1.100 2.800.1.200 1.900 2.900 4.600 4 1.700.7 2.400.8 3.200.6.500-.1 1.500-.6 1.700-1.200.2-.6.200-1.100.1-1.200-.1-.1-.2-.2-.5-.3Z"/></symbol>
+  <symbol id="ramo" viewBox="0 0 220 360"><path d="M112 356 C100 260 122 150 90 12" fill="none" stroke="#404B23" stroke-width="3.5" stroke-linecap="round"/><ellipse cx="136.5" cy="312.0" rx="30.0" ry="9.6" transform="rotate(38 136.5 312.0)" fill="#769F76"/><ellipse cx="79.5" cy="312.0" rx="30.0" ry="9.6" transform="rotate(-38 79.5 312.0)" fill="#769F76"/><ellipse cx="131.0" cy="272.0" rx="28.4" ry="9.1" transform="rotate(38 131.0 272.0)" fill="#769F76"/><ellipse cx="77.0" cy="272.0" rx="28.4" ry="9.1" transform="rotate(-38 77.0 272.0)" fill="#769F76"/><ellipse cx="131.5" cy="232.0" rx="26.8" ry="8.6" transform="rotate(38 131.5 232.0)" fill="#769F76"/><ellipse cx="80.5" cy="232.0" rx="26.8" ry="8.6" transform="rotate(-38 80.5 232.0)" fill="#769F76"/><ellipse cx="131.9" cy="192.0" rx="25.2" ry="8.1" transform="rotate(38 131.9 192.0)" fill="#769F76"/><ellipse cx="84.1" cy="192.0" rx="25.2" ry="8.1" transform="rotate(-38 84.1 192.0)" fill="#769F76"/><ellipse cx="126.4" cy="152.0" rx="23.6" ry="7.6" transform="rotate(38 126.4 152.0)" fill="#769F76"/><ellipse cx="81.6" cy="152.0" rx="23.6" ry="7.6" transform="rotate(-38 81.6 152.0)" fill="#769F76"/><ellipse cx="118.9" cy="112.0" rx="22.0" ry="7.0" transform="rotate(38 118.9 112.0)" fill="#769F76"/><ellipse cx="77.1" cy="112.0" rx="22.0" ry="7.0" transform="rotate(-38 77.1 112.0)" fill="#769F76"/><ellipse cx="113.4" cy="72.0" rx="20.4" ry="6.5" transform="rotate(38 113.4 72.0)" fill="#769F76"/><ellipse cx="74.6" cy="72.0" rx="20.4" ry="6.5" transform="rotate(-38 74.6 72.0)" fill="#769F76"/><ellipse cx="107.9" cy="37.0" rx="18.8" ry="6.0" transform="rotate(38 107.9 37.0)" fill="#769F76"/><ellipse cx="72.1" cy="37.0" rx="18.8" ry="6.0" transform="rotate(-38 72.1 37.0)" fill="#769F76"/><ellipse cx="88" cy="14" rx="9" ry="22" transform="rotate(-8 88 14)" fill="#769F76"/></symbol>
+</svg>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Nathália Salgados, início"><img id="logo" src="img/logo.webp" alt="" width="56" height="56"><span class="nome"><b>Nathália</b><small>Doces e Salgados</small></span></a>
+    <nav aria-label="Principal">
+      <a href="#ambiente">Ambiente</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#festas">Kits festa</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#visite">Como chegar</a>
+    </nav>
+    <a class="btn btn-solid" data-wa="Olá! Vim pelo site e gostaria de fazer um pedido." href="#"><svg><use href="#i-wa"/></svg>Pedir pelo WhatsApp</a>
+  </div>
+</header>
+<main id="inicio">
+  <section class="hero" aria-labelledby="titulo">
+    <svg class="ramo a" viewBox="0 0 220 360" aria-hidden="true"><use href="#ramo"/></svg>
+    <div class="wrap">
+      <div>
+        <h1 id="titulo">Sabor de família em cada pedacinho</h1>
+        <p class="lead">Doces e salgados artesanais, café e sucos no Centro Histórico de Paranaguá. Coma no salão, peça a entrega ou encomende kits para festas.</p>
+        <div class="actions">
+          <a class="btn btn-solid" data-wa="Olá! Vim pelo site e gostaria de fazer um pedido." href="#"><svg><use href="#i-wa"/></svg>Pedir pelo WhatsApp</a>
+          <a class="btn btn-line" href="#festas">Encomendar kit festa</a>
+        </div>
+      </div>
+      <div class="seal" role="img" aria-label="Nota 4,8 no Google, com 40 avaliações">
+        <b>4,8</b>
+        <span>no Google<br>40 avaliações</span>
+      </div>
+    </div>
+  </section>
+  <section class="feature" aria-labelledby="destaque">
+    <div class="wrap">
+      <div>
+        <h2 id="destaque">Suco de maracujá com torta salgada</h2>
+        <p>É o destaque do nosso cardápio.</p>
+      </div>
+      <a class="btn btn-gold" data-wa="Olá! Gostaria de pedir suco de maracujá com torta salgada." href="#"><svg><use href="#i-wa"/></svg>Pedir suco com torta</a>
+    </div>
+  </section>
+  <section class="block ambient" id="ambiente" aria-labelledby="t-ambiente">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="t-ambiente">Um lugar aconchegante, para ir sozinho, em família ou com amigos</h2>
+        <p>Quem visita destaca o ambiente acolhedor e o atendimento atencioso da equipe.</p>
+      </div>
+      <div class="gallery">
+        <figure class="shot tall"><img src="img/bolo.webp" alt="Bolo confeitado com bolinhas crocantes e coco ralado dourado" loading="lazy" style="object-position:center 40%"><figcaption>Bolos</figcaption></figure>
+        <figure class="shot wide"><img src="img/fachada.webp" alt="Fachada da Nathália Salgados no Centro Histórico, com toldo branco e placa azul" loading="lazy" style="object-position:center 30%"><figcaption>Centro Histórico</figcaption></figure>
+        <figure class="shot"><img src="img/salao.webp" alt="Salão com paredes verdes, TV e prateleiras" loading="lazy"><figcaption>O salão</figcaption></figure>
+        <figure class="shot"><img src="img/cupcake.webp" alt="Doce cremoso com pedacinhos vermelhos em forminha, segurado na mão" loading="lazy" style="object-position:center 45%"><figcaption>Doces</figcaption></figure>
+        <div class="shot slogan wide"><p>Sabor que transforma o simples em especial.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="block" id="cardapio" aria-labelledby="t-cardapio">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="t-cardapio">Cardápio</h2>
+        <p>Salgados, doces, café e sucos. A faixa de preço é de R$ 20 a R$ 40 por pessoa.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Categorias do cardápio"></div>
+      <div class="panel" role="tabpanel" id="painel" tabindex="0"></div>
+      <div class="menu-foot">
+        <a class="btn btn-solid" data-wa="Olá! Quais são os salgados, doces e sucos de hoje?" href="#"><svg><use href="#i-wa"/></svg>Ver o que tem hoje</a>
+        <small>Os itens do dia e os valores são confirmados pelo WhatsApp.</small>
+      </div>
+    </div>
+  </section>
+  <section class="party" id="festas" aria-labelledby="t-festas">
+    <div class="wrap">
+      <div>
+        <h2 id="t-festas">Kits festa por encomenda</h2>
+        <p>Mais que salgados, criamos lembranças deliciosas para sua festa. Chame no WhatsApp com a data e o número de convidados.</p>
+      </div>
+      <a class="btn btn-solid" data-wa="Olá! Gostaria de encomendar um kit festa. A data é ___ e serão ___ convidados." href="#"><svg><use href="#i-wa"/></svg>Encomendar kit festa</a>
+    </div>
+  </section>
+  <section class="block reviews" id="avaliacoes" aria-labelledby="t-aval">
+    <div class="wrap">
+      <div class="score">
+        <h2 id="t-aval">Avaliações no Google</h2>
+        <b>4,8</b>
+        <div class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path id="star" d="m12 2.500 2.900 6.200 6.800.8-5 4.700 1.300 6.700L12 17.500 6 20.900l1.300-6.700-5-4.700 6.800-.8z"/></svg>
+          <svg viewBox="0 0 24 24"><use href="#star"/></svg>
+          <svg viewBox="0 0 24 24"><use href="#star"/></svg>
+          <svg viewBox="0 0 24 24"><use href="#star"/></svg>
+          <svg viewBox="0 0 24 24"><use href="#star"/></svg>
+        </div>
+        <p>40 avaliações. Os clientes elogiam a comida, principalmente os doces e sobremesas, o ambiente e o atendimento.</p>
+      </div>
+      <div class="quotes">
+        <blockquote>
+          <p>“Lugar muito aconchegante e acolhedor. Perfeito pra ir sozinha, com a família ou com amigos.”</p>
+          <footer>Nathália Ciriaco Freire</footer>
+        </blockquote>
+        <blockquote>
+          <p>“Comida maravilhosa, lugar aconchegante e atendimento impecável.”</p>
+          <footer>Sélly Mara</footer>
+        </blockquote>
+        <blockquote>
+          <p>Elogiou o atendimento excelente e a atenção da atendente.</p>
+          <footer>Ericka Rocha</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+  <section class="block" style="padding-top:0" aria-labelledby="t-formas">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="t-formas">Do seu jeito</h2></div>
+      <div class="ways">
+        <article class="way salon">
+          <h3>Comer no local</h3>
+          <p>Venha ao Centro Histórico e escolha uma mesa no salão.</p>
+          <a class="btn btn-solid" href="#visite">Ver endereço e horários</a>
+        </article>
+        <article class="way delivery">
+          <h3>Entrega</h3>
+          <p>Peça pelo WhatsApp e combine os detalhes da entrega com a gente.</p>
+          <a class="btn btn-gold" data-wa="Olá! Gostaria de pedir uma entrega." href="#"><svg><use href="#i-wa"/></svg>Pedir entrega</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="block visit" id="visite" aria-labelledby="t-visite">
+    <div class="wrap">
+      <div>
+        <h2 id="t-visite">Venha nos visitar</h2>
+        <address>
+          Rua Marechal Alberto de Abreu, 137<br>
+          Centro Histórico, Paranaguá/PR<br>
+          CEP 83203-240
+        </address>
+        <p><a href="tel:+5541984047595"><strong>(41) 98404-7595</strong></a></p>
+        <table class="hours">
+          <caption>Horário de funcionamento</caption>
+          <tbody>
+            <tr><th scope="row">Segunda a sexta</th><td>7h30 às 18h</td></tr>
+            <tr><th scope="row">Sábado</th><td>7h30 às 15h</td></tr>
+            <tr><th scope="row">Domingo</th><td class="tbd">a confirmar</td></tr>
+          </tbody>
+        </table>
+        <div class="row-btn">
+          <a class="btn btn-solid" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Nath%C3%A1lia+Salgados/@-25.5191078,-48.5059186,17z/data=!3m1!4b1!4m6!3m5!1s0x94db9bafb7790091:0xb802eb035a132344!8m2!3d-25.5191078!4d-48.5059186!16s%2Fg%2F11mqx07w_8">Abrir no Google Maps</a>
+          <a class="btn btn-line" href="tel:+5541984047595">Ligar agora</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Mapa com a localização da Nathália Salgados" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=-25.5191078,-48.5059186&z=17&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-brand">
+      <img id="logo-rodape" alt="Logo Nathália Doces e Salgados" width="112" height="112">
+      <strong>Nathália Salgados</strong><br>
+      Rua Marechal Alberto de Abreu, 137, Centro Histórico, Paranaguá/PR<br>
+      WhatsApp: <a data-wa="Olá! Vim pelo site." href="#">(41) 98404-7595</a>
+    </div>
+    <a id="instagram" href="https://www.instagram.com/nathaliasalgados_/" target="_blank" rel="noopener">Instagram @nathaliasalgados_</a>
+  </div>
+</footer>
+<a class="fab" data-wa="Olá! Vim pelo site e gostaria de fazer um pedido." href="#" aria-label="Pedir pelo WhatsApp"><svg><use href="#i-wa"/></svg>Pedir</a>
+<script>
+/* ===== Configuração fácil de editar ===== */
+const WHATSAPP = "5541984047595";
+/* Cardápio (itens tirados das artes de cardápio da marca, sem preços).
+   Para incluir preço, escreva assim: "Coxinha | R$ 8,00" */
+const MENU = [
+  { id: "salgados", titulo: "Salgados",
+    texto: "Assados, fritos, pastel na hora e torta salgada.",
+    grupos: [
+      { nome: "Assados", itens: ["Queijo e presunto","Carne","Calabresa","Frango","Frango com catupiry","Frango com cheddar","Palmito","Enroladinho de salsicha","Enroladinho de queijo"] },
+      { nome: "Fritos", itens: ["Coxinha","Quibe","Risole de carne","Croquete de queijo e presunto","Enroladinho de vina","Bolinha de queijo"] },
+      { nome: "Pastel frito na hora", itens: ["Carne","Frango","Palmito","Queijo","Catupiry","Cheddar","Presunto","Tomate"] },
+      { nome: "Torta salgada", itens: ["Peça com o suco de maracujá, o destaque da casa"] }
+    ] },
+  { id: "doces", titulo: "Doces",
+    texto: "Bolos, doces gourmet e bolos no pote. Os doces e sobremesas são o que os clientes mais elogiam.",
+    grupos: [
+      { nome: "Bolos", itens: ["Strogonoff de nozes","Morango com leite ninho","Dois amores","Brigadeiro gourmet","Nuvem de uva","Red velvet","Kinder Bueno","Abacaxi"] },
+      { nome: "Doces gourmet", itens: ["Dois amores","Brigadeiro gourmet","Beijinho","Coco queimado","Churros com doce de leite","Leite Ninho com Nutella","Moranguinho"] },
+      { nome: "Bolos no pote", itens: ["Morango com ninho","Abacaxi","Dois amores","Strogonoff de nozes","Red velvet","Doce de leite com ameixa","Mousse de maracujá com brigadeiro"] },
+      { nome: "Pão do céu, toda terça e quinta", itens: ["Doce de leite","Creme de avelã","Sem recheio"] }
+    ] },
+  { id: "cafe", titulo: "Café",
+    texto: "Um café para acompanhar o salgado ou o doce.",
+    grupos: [] },
+  { id: "sucos", titulo: "Sucos",
+    texto: "Sucos para acompanhar o seu pedido.",
+    grupos: [ { nome: "Sucos", itens: ["Suco de maracujá"] } ] }
+];
+/* ===== Logo do rodapé (reaproveita a do topo) ===== */
+document.getElementById("logo-rodape").src = document.getElementById("logo").src;
+/* ===== WhatsApp ===== */
+document.querySelectorAll("[data-wa]").forEach(a=>{
+  a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(a.dataset.wa);
+  a.target = "_blank"; a.rel = "noopener";
+});
+/* ===== Cardápio com abas ===== */
+const tabs = document.querySelector(".tabs");
+const painel = document.getElementById("painel");
+function mostrar(id){
+  tabs.querySelectorAll(".tab").forEach(t=>{
+    t.setAttribute("aria-selected", String(t.dataset.id===id));
+    t.tabIndex = t.dataset.id===id ? 0 : -1;
+  });
+  const cat = MENU.find(c=>c.id===id);
+  painel.setAttribute("aria-labelledby","tab-"+id);
+  painel.innerHTML = "";
+  const p = document.createElement("p"); p.className="note"; p.textContent = cat.texto; painel.append(p);
+  if(!cat.grupos.length){
+    const q = document.createElement("p");
+    q.textContent = "Pergunte pelo WhatsApp o que está saindo agora.";
+    painel.append(q); return;
+  }
+  const g = document.createElement("div"); g.className="groups";
+  cat.grupos.forEach(gr=>{
+    const box = document.createElement("div"); box.className="group";
+    const h = document.createElement("h3"); h.textContent = gr.nome; box.append(h);
+    const ul = document.createElement("ul");
+    gr.itens.forEach(it=>{
+      const li = document.createElement("li");
+      const [nome, preco] = it.split("|").map(s=>s.trim());
+      li.textContent = preco ? nome + " . " + preco : nome;
+      ul.append(li);
+    });
+    box.append(ul); g.append(box);
+  });
+  painel.append(g);
+}
+MENU.forEach(c=>{
+  const b = document.createElement("button");
+  b.className="tab"; b.type="button"; b.setAttribute("role","tab"); b.id="tab-"+c.id; b.dataset.id=c.id;
+  b.setAttribute("aria-controls","painel"); b.textContent=c.titulo;
+  b.addEventListener("click",()=>mostrar(c.id));
+  b.addEventListener("keydown",e=>{
+    const all=[...tabs.querySelectorAll(".tab")]; const i=all.indexOf(b);
+    if(e.key==="ArrowRight"||e.key==="ArrowLeft"){
+      const n=all[(i+(e.key==="ArrowRight"?1:-1)+all.length)%all.length]; n.focus(); n.click(); e.preventDefault();
+    }
+  });
+  tabs.append(b);
+});
+mostrar(MENU[0].id);
+</script>
+</body>
+</html>
