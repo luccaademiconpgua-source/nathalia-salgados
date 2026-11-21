@@ -152,21 +152,22 @@ section.block{padding:clamp(56px,9vw,104px) 0}
 .ambient{background:#E5EFD6}
 .ambient .sec-head{grid-template-columns:1fr}
 @media(min-width:860px){.ambient .sec-head{grid-template-columns:1fr 1fr;align-items:end;gap:3rem}}
-.gallery{display:grid;gap:14px;grid-template-columns:1fr 1fr}
-.shot{position:relative;margin:0;min-height:200px;overflow:hidden;border-radius:6px 28px 6px 28px;background:var(--salvia)}
+.gallery{columns:2;column-gap:14px}
+@media(min-width:860px){.gallery{columns:3;column-gap:16px}}
+.shot{position:relative;margin:0 0 14px;break-inside:avoid;overflow:hidden;border-radius:6px 28px 6px 28px;background:var(--salvia)}
+@media(min-width:860px){.shot{margin-bottom:16px}}
 .shot:nth-child(2n){border-radius:28px 6px 28px 6px}
-.shot img{width:100%;height:100%;object-fit:cover}
-.shot figcaption{position:absolute;left:12px;bottom:12px;background:var(--folha);color:#fff;font-size:.9rem;font-weight:600;padding:.3rem .8rem;border-radius:999px}
-.shot.tall{grid-row:span 2;min-height:420px}
-.shot.slogan{background:var(--folha);display:grid;place-content:center;padding:1.6rem;text-align:left}
+.shot button{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.shot img{width:100%;height:auto}
+.shot figcaption{position:absolute;left:12px;bottom:12px;background:var(--folha);color:#fff;font-size:.9rem;font-weight:600;padding:.3rem .8rem;border-radius:999px;pointer-events:none}
+.shot.slogan{background:var(--folha);padding:2rem 1.6rem;text-align:left}
 .shot.slogan p{font:italic 700 clamp(1.7rem,4vw,2.4rem)/1.05 var(--display);color:var(--ouro)}
-@media(min-width:860px){
-  .gallery{grid-template-columns:1fr 1.1fr 1fr;grid-auto-rows:220px}
-  .shot.tall{min-height:0}
-  .shot.wide{grid-column:span 2}
-  .shot.slogan.wide{grid-column:span 3}
-}
-/* avaliações */
+.lightbox{border:0;padding:0;background:transparent;max-width:100vw;max-height:100vh;width:100vw;height:100vh}
+.lightbox::backdrop{background:rgba(20,26,10,.92)}
+.lightbox .box{position:relative;width:100%;height:100%;display:grid;place-items:center;padding:56px 16px 24px}
+.lightbox img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;border-radius:8px}
+.lightbox .fechar{position:absolute;top:12px;right:12px;min-height:44px;padding:.5rem 1.2rem;border-radius:999px;border:2px solid #fff;background:transparent;color:#fff;font:700 1rem var(--body);cursor:pointer}
+.lightbox .legenda{position:absolute;left:0;right:0;bottom:10px;text-align:center;color:#fff;font-weight:600}
 .reviews .wrap{display:grid;gap:3rem}
 .score{display:flex;flex-direction:column;gap:.7rem}
 .score h2{font-size:2rem}
@@ -269,11 +270,11 @@ footer.site a{color:#fff}
         <p>Quem visita destaca o ambiente acolhedor e o atendimento atencioso da equipe.</p>
       </div>
       <div class="gallery">
-        <figure class="shot tall"><img src="img/bolo.webp" alt="Bolo confeitado com bolinhas crocantes e coco ralado dourado" loading="lazy" style="object-position:center 40%"><figcaption>Bolos</figcaption></figure>
-        <figure class="shot wide"><img src="img/fachada.webp" alt="Fachada da Nathália Salgados no Centro Histórico, com toldo branco e placa azul" loading="lazy" style="object-position:center 30%"><figcaption>Centro Histórico</figcaption></figure>
-        <figure class="shot"><img src="img/salao.webp" alt="Salão com paredes verdes, TV e prateleiras" loading="lazy"><figcaption>O salão</figcaption></figure>
-        <figure class="shot"><img src="img/cupcake.webp" alt="Doce cremoso com pedacinhos vermelhos em forminha, segurado na mão" loading="lazy" style="object-position:center 45%"><figcaption>Doces</figcaption></figure>
-        <div class="shot slogan wide"><p>Sabor que transforma o simples em especial.</p></div>
+        <figure class="shot"><button type="button" data-zoom="img/bolo.webp" data-cap="Bolos" aria-label="Ampliar foto: Bolos"><img src="img/bolo.webp" alt="Bolo confeitado com bolinhas crocantes e coco ralado dourado" loading="lazy"></button><figcaption>Bolos</figcaption></figure>
+        <figure class="shot"><button type="button" data-zoom="img/fachada.webp" data-cap="Centro Histórico" aria-label="Ampliar foto: Centro Histórico"><img src="img/fachada.webp" alt="Fachada da Nathália Salgados no Centro Histórico, com toldo branco e placa azul" loading="lazy"></button><figcaption>Centro Histórico</figcaption></figure>
+        <div class="shot slogan"><p>Sabor que transforma o simples em especial.</p></div>
+        <figure class="shot"><button type="button" data-zoom="img/salao.webp" data-cap="O salão" aria-label="Ampliar foto: O salão"><img src="img/salao.webp" alt="Salão com paredes verdes, TV e prateleiras" loading="lazy"></button><figcaption>O salão</figcaption></figure>
+        <figure class="shot"><button type="button" data-zoom="img/cupcake.webp" data-cap="Doces" aria-label="Ampliar foto: Doces"><img src="img/cupcake.webp" alt="Doce cremoso com pedacinhos vermelhos em forminha, segurado na mão" loading="lazy"></button><figcaption>Doces</figcaption></figure>
       </div>
     </div>
   </section>
@@ -470,6 +471,17 @@ MENU.forEach(c=>{
   tabs.append(b);
 });
 mostrar(MENU[0].id);
+</script>
+<dialog class="lightbox" id="lightbox" aria-label="Foto ampliada"><div class="box"><button class="fechar" type="button" id="fechar">Fechar</button><img id="lb-img" alt=""><p class="legenda" id="lb-cap"></p></div></dialog>
+<script>
+(function(){
+  const d=document.getElementById("lightbox"),im=document.getElementById("lb-img"),cp=document.getElementById("lb-cap");
+  document.querySelectorAll("[data-zoom]").forEach(b=>b.addEventListener("click",()=>{
+    im.src=b.dataset.zoom; im.alt=b.querySelector("img").alt; cp.textContent=b.dataset.cap; d.showModal();
+  }));
+  document.getElementById("fechar").addEventListener("click",()=>d.close());
+  d.addEventListener("click",e=>{ if(e.target===d||e.target.classList.contains("box")) d.close(); });
+})();
 </script>
 </body>
 </html>
