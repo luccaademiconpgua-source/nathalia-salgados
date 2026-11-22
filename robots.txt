@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+Sitemap: https://luccaademiconpgua-source.github.io/nathalia-salgados/sitemap.xml
